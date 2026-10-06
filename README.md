@@ -1,12 +1,30 @@
-# nothing-bar
+<p align="center">
+  <img src="Screenshots/readme-logo.svg" alt="NothingBar headphones logo" width="112" />
+</p>
 
-> It's unofficial software and not affilated with Nothing ([legal](#legal-disclaimer))
+<h1 align="center">NothingBar</h1>
 
-Native macOS menu bar app to control Nothing headphones.</br>Completely local, fully native, no analytics, entirely free. Feel free to contribute.
+<p align="center"><strong>Your Nothing headphones live in the menu bar.</strong></p>
 
-Special credits to:
+<p align="center">
+  <a href="https://nothingbar.bestk1ng.com/">Website</a> ·
+  <a href="https://github.com/bestK1ngArthur/nothing-bar/releases">Download</a> ·
+  <a href="https://github.com/bestK1ngArthur/nothing-bar/issues/new/choose">Report an issue</a>
+</p>
 
-> Ear (web) project developers for bluetooth communication code, it has been really helpful in developing this project. Link to Ear (web): https://earweb.bttl.xyz
+> It's unofficial software and not affiliated with Nothing ([legal](#legal-disclaimer)).
+
+Native macOS menu bar app to control Nothing and CMF headphones. Completely local, fully native, no analytics, entirely free. Feel free to contribute.
+
+Special credits to the [Ear (web)](https://earweb.bttl.xyz/) developers for the Bluetooth communication code — it has been really helpful in developing this project.
+
+## Features
+
+- Check battery levels and control noise cancellation, transparency, Spatial Audio, bass, and EQ from the menu bar. Available controls depend on your device.
+- Play a sound to find supported earbuds.
+- Get connection and low-battery notifications in Classic or Apple style.
+- Choose a language, launch at login, and get automatic updates through [Sparkle](https://sparkle-project.org/).
+- Keep everything local: no account, cloud, or analytics.
 
 ## Installation
 
@@ -25,19 +43,31 @@ The app updates automatically through [Sparkle](https://sparkle-project.org/); y
 
 ## Screenshots
 
-### Bar
-<img width="400" alt="Screenshot" src="screenshots/screenshot-bar.png" />
+<p align="center">
+  <img src="Screenshots/screenshot-bar.png" alt="NothingBar menu bar controls showing battery, noise cancellation, Spatial Audio, bass and EQ" width="330" />
+</p>
 
-### Settings
-<img width="500" alt="Screenshot" src="screenshots/screenshot-settings.png" />
-
-### Notifications
-
-<img width="500" alt="Screenshot" src="screenshots/screenshot-notification-setting.png" />
-
-| Classic | Apple |
+| Device settings | Notification settings |
 | --- | --- |
-| <img width="400" alt="Classic notification screenshot" src="screenshots/screenshot-notification-classic.png" /> | <img width="400" alt="Apple notification screenshot" src="screenshots/screenshot-notification-apple.png" /> |
+| <img src="Screenshots/screenshot-settings.png" alt="NothingBar device settings with find my headphones control" width="500" /> | <img src="Screenshots/screenshot-notification-setting.png" alt="NothingBar notification settings" width="500" /> |
+
+| Classic notification | Apple notification |
+| --- | --- |
+| <img src="Screenshots/screenshot-notification-classic.png" alt="Classic connection notification" width="400" /> | <img src="Screenshots/screenshot-notification-apple.png" alt="Apple-style connection notification" width="400" /> |
+
+## Languages
+
+NothingBar follows your Mac's language by default. You can also choose **English**, **Español**, or **Català** in **Settings → App → App language**. Restart the app when prompted to apply the change.
+
+### Add a language
+
+Translations are welcome! If you'd like to add one:
+
+1. Add the language to the project in Xcode under **Project → Info → Localizations**.
+2. Translate the English entries in [`Localizable.xcstrings`](NothingBar/Localizable.xcstrings) and [`InfoPlist.xcstrings`](NothingBar/InfoPlist.xcstrings). Keep placeholders and format values intact.
+3. Add its language code and native display name to `AppLanguage` in [`AppData.swift`](NothingBar/Models/AppData.swift), so it appears in the app language picker.
+4. Build the app, switch to the new language in Settings, restart, and check the menu bar, settings, notifications, and permission prompts.
+5. [Open a pull request](https://github.com/bestK1ngArthur/nothing-bar/compare) with your translation. I'll review it when I can.
 
 ## Supported Devices
 
