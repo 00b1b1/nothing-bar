@@ -12,6 +12,10 @@
   <a href="https://github.com/bestK1ngArthur/nothing-bar/issues/new/choose">Report an issue</a>
 </p>
 
+<p align="center">
+  <img src="Screenshots/readme-showcase.png" alt="NothingBar menu bar controls, device settings, and notification settings" width="100%" />
+</p>
+
 > It's unofficial software and not affiliated with Nothing ([legal](#legal-disclaimer)).
 
 Native macOS menu bar app to control Nothing and CMF headphones. Completely local, fully native, no analytics, entirely free. Feel free to contribute.
