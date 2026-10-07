@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Screenshots/readme-logo.svg" alt="NothingBar headphones logo" width="112" />
+  <img src="docs/assets/appicon.png" alt="NothingBar app icon" width="112" />
 </p>
 
 <h1 align="center">NothingBar</h1>
